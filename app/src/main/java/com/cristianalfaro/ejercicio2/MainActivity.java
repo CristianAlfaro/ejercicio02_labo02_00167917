@@ -29,11 +29,45 @@ public class MainActivity extends AppCompatActivity {
                 reds.add(Color.rgb(255, 0, 0));
                 reds.add(Color.rgb(50, 0, 0));
                 reds.add(Color.rgb(150, 0, 0));
-                reds.add(Color.rgb(10, 0, 0));
-                int selectedColor = reds.get(5);
+                reds.add(Color.rgb(175, 0, 0));
+                int numero = (int) (Math.random() * 6);
+                int selectedColor = reds.get(numero);
                 red.setBackgroundColor(selectedColor);
             }
         });
+
+        blue = (Button) findViewById(R.id.blue);
+        blue.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                List<Integer> reds = new ArrayList<Integer>();
+                reds.add(Color.rgb(0, 0, 200));
+                reds.add(Color.rgb(0, 0, 100));
+                reds.add(Color.rgb(0, 0, 150));
+                reds.add(Color.rgb(0, 0, 50));
+                reds.add(Color.rgb(0, 0, 255));
+                reds.add(Color.rgb(0, 0, 175));
+                int numero = (int) (Math.random() * 6);
+                int selectedColor = reds.get(numero);
+                blue.setBackgroundColor(selectedColor);
+            }
+        });
+
+        green = (Button) findViewById(R.id.green);
+        green.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                List<Integer> reds = new ArrayList<Integer>();
+                reds.add(Color.rgb(0, 200, 0));
+                reds.add(Color.rgb(0, 100, 0));
+                reds.add(Color.rgb(0, 50, 0));
+                reds.add(Color.rgb(0, 150, 0));
+                reds.add(Color.rgb(0, 175, 0));
+                reds.add(Color.rgb(0, 255, 0));
+                int numero = (int) (Math.random() * 6);
+                int selectedColor = reds.get(numero);
+                green.setBackgroundColor(selectedColor);
+            }
+        });
+
 
 
     }
